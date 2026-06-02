@@ -1,0 +1,49 @@
+:root {
+    --primary-color2: #dbcde6;
+    --primary-color1: #2e0f38;
+    --secondary-color1: #8351a8;
+    --secondary-color2: #1a2c54;
+    --accent-color: #4d7b93;
+    --text-color-dark: #000;
+    --text-color-light: white;
+    --gradient-background: linear-gradient(to bottom, #2e0f38 0%, #8351a8 0%, #2e0f38 80%);
+}
+
+/* ---
+#b45dbb
+*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 100%;
+    flex-basis: 0;
+    padding: 20px;
+    background-color: var(--secondary-color1);
+    border: 1px solidvar(--primary-color1);
+    background: var(--gradient-background);
+    text-shadow: 0 0 2px var(--primary-color1);
+}
+
+nav li {
+    list-style: none;
+}
+
+ul {
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+a:hover {
+    color: var(--primary-color1);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
