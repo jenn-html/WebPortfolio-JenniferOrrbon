@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color2: #dbcde6;
+    --primary-color1: #2e0f38;
+    --secondary-color1: #8351a8;
+    --secondary-color2: #1a2c54;
+    --accent-color: #4d7b93;
+    --accent-color-light: #4d7a937b;
+    --text-color-dark: #000;
+    --text-color-light: white;
+    --gradient-background: linear-gradient(to bottom, #56b7f334, #ffffff73, #4d7a937d);
+}
+
+/* ---
+#b45dbb
+*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    /* background: var(--gradient-background); */
+    background-color: var(--accent-color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+}
+
+nav li {
+    list-style: none;
+    /* border: 1px solid #f1ebf6; */
+    /* padding: 20px; */
+    flex: 1 1 auto;
+
+}
+
+ul {
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    padding: 20px;
+    font-size: 2vh;
+}
+
+#my-name {
+    font-size: 5vh;
+    font-weight: bold;
+    color: var(--text-color-light);
+    font-family: 'Hurricane', cursive;
+}
+
+a:hover {
+    color: var(--secondary-color1);
+    BORDER-radius: 10px;
+    background-color: #fdfdfd44;
+}
+
+#my-name:hover {
+    color: var(--secondary-color1);
+    background-color: transparent;
+}
+
+a:active {
+    background-color: #2e0f3829;
+}

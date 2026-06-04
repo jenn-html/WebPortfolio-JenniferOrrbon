@@ -6,33 +6,76 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <a id="my-name" href="#hero-section">Jennifer Orrbon</a>
             <ul>
-                <li><a href="#home">Jennifer Orrbon</a></li>
-                <li><a href="#projects">My projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cv">My CV</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#cv-section">My CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to my website!</p>
+        <section id="hero-section">
+            <img id="hero-image" src="images/linjerat-a4.jpg" alt="Hero Image">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Jennifer Orrbon</h1>
+                    <h2>System Developer .Net</h2>
+                </div>
+                <div class="profile-image">
+                    <img id="profile-image" src="images/profilbild.jpg" alt="Profile Image">
+                </div>
+            </div>
+            <div class="my-skills">
+                <figure class="skill-container">
+                    <img src="images/csharp.png" alt="C#">
+                    <figcaption>C#</figcaption>
+                </figure>
+                <figure class="skill-container">
+                    <img src="images/dotnet.png" alt=".NET">
+                    <figcaption>.NET</figcaption>
+                </figure>
+                <figure class="skill-container">
+                    <img src="images/javascript.png" alt="JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="skill-container">
+                    <img src="images/html.png" alt="HTML">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure class="skill-container">
+                    <img src="images/css.png" alt="CSS">
+                    <figcaption>CSS</figcaption>
+                </figure>
+            </div>
         </section>
-        <section id="about">
+        <section id="portfolio-section">
+            <h2>Portfolio</h2>
+            <p>Check out my work!</p>
+        </section>
+        <section id="about-section">
             <h2>About</h2>
             <p>Learn more about me.</p>
         </section>
-        <section id="contact">
+        <section id="contact-section">
             <h2>Contact</h2>
             <p>Get in touch with me.</p>
+        </section>
+        <section id="cv-section">
+            <h2>My CV</h2>
+            <p>Download my CV.</p>
         </section>
     </main>
     <footer>
