@@ -25,6 +25,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100vw;
 }
 
 nav {
@@ -38,7 +39,7 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 8vh;
 }
 
@@ -61,13 +62,13 @@ a {
     text-decoration: none;
     color: var(--text-color-light);
     padding: 20px;
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 #my-name {
     font-size: 5vh;
     font-weight: bold;
-    color: var(--accent-color);
+    color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
 }
 

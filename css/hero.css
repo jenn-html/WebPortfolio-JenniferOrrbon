@@ -9,13 +9,16 @@
 
 #hero-section {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
-    color: var(--accent-color);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 10vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 #hero-image {
@@ -41,23 +44,19 @@
 .hero-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    align-items: space-evenly;
+    justify-content: start;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    width: 90%;
-    height: 90%;
-    margin-top: 5vh;
+    color: var(--secondary-color2);
 }
 
-.hero-text {
+.hero-text,
+.profile-image {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 1fr;
     font-family: 'Hurricane', cursive;
 }
 
