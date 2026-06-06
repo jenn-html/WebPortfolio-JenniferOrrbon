@@ -6,11 +6,61 @@
     padding: 0;
 }
 
+:root {
+    --primary-color2: #4d7b93;
+    --primary-color1: #2e0f38;
+    --secondary-color1: #8351a8;
+    --secondary-color2: #1a2c54;
+    --accent-color: #eec0ea;
+    --accent-color-light: #4d7a937b;
+    --text-color-dark: #000;
+    --text-color-light: white;
+    --gradient-background: linear-gradient(to bottom, #56b7f334, #ffffff73, #4d7a937d);
+}
+
 .portfolio-section,
 .hero-section {
-    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     width: 90vw;
-
     margin-top: 10vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color2);
+    font-family: 'Hurricane', cursive;
+}
+
+h1 {
+    font-size: 7vw;
+}
+
+h2 {
+    font-size: 5vw;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--secondary-color1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 3vw;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
