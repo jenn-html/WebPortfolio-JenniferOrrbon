@@ -49,7 +49,7 @@ nav li {
     /* border: 1px solid #f1ebf6; */
     /* padding: 20px; */
     flex: 1 1 auto;
-
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -64,6 +64,7 @@ a {
     color: var(--text-color-light);
     padding: 20px;
     font-size: 2vh;
+
 }
 
 #my-name {
@@ -71,6 +72,7 @@ a {
     font-weight: bold;
     color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
+
 }
 
 a:hover {
