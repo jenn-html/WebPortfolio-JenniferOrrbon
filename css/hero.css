@@ -39,6 +39,7 @@
     border: 10px solid var(--accent-color);
     border-radius: 10px;
     margin: 30px;
+    transform: rotate(8deg);
 }
 
 .hero-content {
