@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-me.css">
     <script src="javascript/script.js" defer></script>
 </head>
 
@@ -136,9 +137,43 @@
             <p>Professional problem solver.</p>
 
         </section>
-        <section id="contact-section">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
+        <section id="contact" class="contact-section">
+            <header class="contact-header">
+                <h2>Contact me</h2>
+                <p>Want to grab a coffee and talk about the weather? Feel free to reach out!</p>
+            </header>
+            <div class="form-weather">
+                <div class="form-container">
+                    <form action="https://formsubmit.co/jenniferorrbon@gmail.com" method="POST">
+                        <div class="form-group"><label for="firstname">
+                                *First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-group"><label for="lastname">*Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-group"><label for="email">*Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group"><label for="message">*Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-group-button">
+                            <p>* Required fields</p>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="weather-container">
+                    <div id="weatherInfo"></div>
+                    <div id="weatherMessage"></div>
+                    <div id="weatherAlways"></div>
+                    <div>
+                        <p>If you haven't already, you can download my CV here</p>
+                        <a href="files/CV.pdf" class="btn" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="cv-section">
             <h2>My CV</h2>
@@ -159,6 +194,7 @@
             Freepik - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by
             Pixel perfect - Flaticon</a>
+        <p>&copy; 2026 Jennifer Orrbon. All rights reserved.</p>
     </footer>
 </body>
 

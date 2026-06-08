@@ -1,0 +1,96 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+    background-color: var(--background-color);
+    color: rgb(72, 5, 123);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.form-group,
+.form-group-button {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.form-group-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 10px;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid rgb(188, 134, 237, 0.5);
+    box-shadow: inset 0 0 5px rgba(255, 0, 255, 0.211);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(249, 223, 246);
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+    border-color: aqua;
+    background-color: rgb(252, 201, 247, 0.8);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(240, 178, 234);
+    color: white;
+    border: 1px solid rgb(188, 134, 237, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: rgba(210, 178, 240, 0.8);
+}
+
+button:active {
+    background-color: rgba(185, 96, 210, 0.6);
+}
+
+.form-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
