@@ -6,9 +6,14 @@
     justify-content: space-between;
     gap: 20px;
     padding: 40px 0;
-    background-color: var(--background-color);
-    color: rgb(72, 5, 123);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
