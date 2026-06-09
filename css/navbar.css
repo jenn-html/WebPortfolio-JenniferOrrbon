@@ -6,17 +6,7 @@
     padding: 0;
 }
 
-:root {
-    --primary-color2: #dbcde6;
-    --primary-color1: #2e0f38;
-    --secondary-color1: #8351a8;
-    --secondary-color2: #1a2c54;
-    --accent-color: #4d7b93;
-    --accent-color-light: #4d7a937b;
-    --text-color-dark: #000;
-    --text-color-light: white;
-    --gradient-background: linear-gradient(to bottom, #56b7f334, #ffffff73, #4d7a937d);
-}
+
 
 /* ---
 #b45dbb
@@ -63,12 +53,12 @@ a {
     text-decoration: none;
     color: var(--text-color-light);
     padding: 20px;
-    font-size: 2vh;
+    font-size: 1rem;
 
 }
 
 #my-name {
-    font-size: 5vh;
+    font-size: 2.5rem;
     font-weight: bold;
     color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
@@ -77,8 +67,8 @@ a {
 
 a:hover {
     color: var(--secondary-color1);
-    BORDER-radius: 10px;
-    background-color: #fdfdfd44;
+    border-radius: 10px;
+    /* background-color: #fdfdfd44; */
 }
 
 #my-name:hover {
@@ -87,5 +77,5 @@ a:hover {
 }
 
 a:active {
-    background-color: #2e0f3829;
+    color: var(--accent-color);
 }

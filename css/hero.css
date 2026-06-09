@@ -57,11 +57,11 @@
     font-family: 'Hurricane', cursive;
 }
 
-.hero-text h1 {
+h1 {
     font-size: 7vw;
 }
 
-.hero-text h2 {
+h2 {
     font-size: 4vw;
     margin-top: 20px;
 }
