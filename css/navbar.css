@@ -31,7 +31,7 @@ nav {
     z-index: 1000;
     top: 0;
     width: 100vw;
-    height: 8vh;
+    height: auto;
 }
 
 nav li {
@@ -67,8 +67,6 @@ a {
 
 a:hover {
     color: var(--secondary-color1);
-    border-radius: 10px;
-    /* background-color: #fdfdfd44; */
 }
 
 #my-name:hover {

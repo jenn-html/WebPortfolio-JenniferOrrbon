@@ -22,6 +22,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+
     z-index: -1;
 }
 
@@ -64,4 +65,17 @@ h1 {
 h2 {
     font-size: 4vw;
     margin-top: 20px;
+}
+
+#profile-message {
+    visibility: hidden;
+    border: 2px dotted aquamarine;
+    background-color: rgba(234, 249, 253, 0.506);
+    padding: 4vw;
+    border-radius: 50%;
+    position: fixed;
+    top: 10vh;
+    right: 60vw;
+    font-size: 4vw;
+    transform: rotate(-5deg);
 }
