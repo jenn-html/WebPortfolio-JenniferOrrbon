@@ -16,16 +16,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#hero-image {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-
-    z-index: -1;
-}
-
 #profile-image {
     width: 200px;
     height: 250px;
@@ -69,13 +59,34 @@ h2 {
 
 #profile-message {
     visibility: hidden;
-    border: 2px dotted aquamarine;
-    background-color: rgba(234, 249, 253, 0.506);
+    background-color: rgba(240, 248, 255, 0.339);
     padding: 4vw;
     border-radius: 50%;
     position: fixed;
-    top: 10vh;
-    right: 60vw;
+    top: 50vh;
+    right: 26vw;
     font-size: 4vw;
-    transform: rotate(-5deg);
+    transform: rotate(5deg);
+}
+
+@media (max-width: 800px) {
+
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-content {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
 }

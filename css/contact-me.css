@@ -71,6 +71,7 @@ textarea:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 20px;
 }
 
 .form-weather div {
@@ -83,7 +84,35 @@ textarea:active {
     margin: 10px;
 }
 
-.form-container {
+.form-container,
+.download-cv-section {
     background-color: rgba(255, 228, 196, 0.517);
     border-radius: 10px;
+}
+
+.weather-container,
+.download-cv-section {
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        height: auto;
+    }
+
+    .form-weather {
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
 }

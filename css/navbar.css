@@ -11,11 +11,16 @@
 /* ---
 #b45dbb
 */
-header {
+.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -23,15 +28,10 @@ nav {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background: var(--gradient-background); */
     background-color: var(--accent-color-light);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    z-index: 1000;
-    top: 0;
     width: 100vw;
-    height: auto;
 }
 
 nav li {
