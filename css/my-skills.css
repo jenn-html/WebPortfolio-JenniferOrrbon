@@ -1,12 +1,21 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+
 .skill-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
     gap: 1vw;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 60vw;
+    width: 90vw;
     height: auto;
 }
 
@@ -28,7 +37,6 @@
     font-size: 1.5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
