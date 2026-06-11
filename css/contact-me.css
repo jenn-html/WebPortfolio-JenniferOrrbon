@@ -47,10 +47,10 @@ input[type="email"],
 textarea {
     padding: 10px;
     border: 1px solid rgb(188, 134, 237, 0.5);
-    box-shadow: inset 0 0 5px rgba(255, 0, 255, 0.211);
+    box-shadow: inset 0 0 5px rgba(248, 208, 248, 0.211);
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgb(249, 223, 246);
+    background-color: rgba(253, 251, 253, 0.908);
 }
 
 label {
@@ -63,8 +63,8 @@ input:focus,
 textarea:focus,
 input:active,
 textarea:active {
-    border-color: aqua;
-    background-color: rgb(252, 201, 247, 0.8);
+    border-color: var(--primary-color2);
+    background-color: rgba(255, 220, 250, 0.552);
 }
 
 .form-weather {
@@ -86,13 +86,15 @@ textarea:active {
 
 .form-container,
 .download-cv-section {
-    background-color: rgba(255, 228, 196, 0.517);
-    border-radius: 10px;
+    background-color: var(--accent-color-light);
+    /* border-radius: 10px; */
 }
 
 .weather-container,
 .download-cv-section {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 
