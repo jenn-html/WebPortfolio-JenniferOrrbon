@@ -8,7 +8,7 @@
 
 :root {
     --primary-color2: #4d7b93;
-    --primary-color1: #2e0f38;
+    --primary-color1: #ec95e3;
     --secondary-color1: #8351a8;
     --secondary-color2: #1a2c54;
     --accent-color: #eec0ea;
@@ -60,11 +60,26 @@ h3 {
     transition: background-color 0.3s, transform 0.1s;
 }
 
-.btn:hover {
-    background-color: var(--secondary-color1);
+.btn:hover,
+.btn--download:hover {
+    background-color: var(--primary-color1);
+    color: white;
 }
 
-.btn:active {
+.btn:active,
+.btn--download:active {
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn--download {
+    background-color: white;
+    color: var(--primary-color1);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 2px solid var(--accent-color);
+    transition: background-color 0.3s, transform 0.1s;
 }
