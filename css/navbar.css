@@ -6,16 +6,23 @@
     padding: 0;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* ---
 #b45dbb
 */
-header {
+.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -23,38 +30,35 @@ nav {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background: var(--gradient-background); */
-    background-color: var(--accent-color-light);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100vw;
-    height: 8vh;
+    background-color: var(--blue-color-from-post-it);
+    width: 100%;
 }
 
 nav li {
-    list-style: none;
-    /* border: 1px solid #f1ebf6; */
-    /* padding: 20px; */
-    flex: 1 1 auto;
-    scroll-behavior: smooth;
+    padding: 20px;
+    display: flex;
 }
 
 ul {
+    list-style: none;
     justify-content: start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+li .btn {
+    background-color: none;
+
+}
+
 a {
     text-decoration: none;
     color: var(--text-color-light);
-    padding: 20px;
     font-size: 1rem;
-
+    transition: color 0.2s ease;
 }
 
 #my-name {
@@ -62,13 +66,11 @@ a {
     font-weight: bold;
     color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
-
+    /* padding: 0.5rem 0; */
 }
 
 a:hover {
     color: var(--secondary-color1);
-    border-radius: 10px;
-    /* background-color: #fdfdfd44; */
 }
 
 #my-name:hover {
@@ -79,3 +81,19 @@ a:hover {
 a:active {
     color: var(--accent-color);
 }
+
+/* @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    ul {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    a {
+        padding: 0.75rem; /* Något mindre knappar på mobilen */
+/* } */
+/* } */

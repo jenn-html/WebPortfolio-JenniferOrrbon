@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/1d9d21891a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/my-skills.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/my-portfolio.css">
+    <link rel="stylesheet" href="css/about-me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-me.css">
     <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <nav>
             <a id="my-name" href="#hero-section">Jennifer Orrbon</a>
             <ul>
+                <li><a href="#skills-section">My skills</a></li>
                 <li><a href="#portfolio-section">Portfolio</a></li>
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#contact-section">Contact</a></li>
-                <li><a href="#cv-section">My CV</a></li>
+                <li><a href="/files/cv.pdf" download>My CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero-section" class="hero-section">
-            <img id="hero-image" src="images/linjerat-a4.jpg" alt="Hero Image">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Jennifer Orrbon</h1>
                     <h2>System Developer .Net</h2>
-                    <button class="btn" id="download-cv-btn">Download CV</button>
+                    <a href="/files/cv.pdf" download class="btn--download">Download CV</a>
                 </div>
                 <div class="profile-image">
                     <img id="profile-image" src="images/profilbild.jpg" alt="Profile Image">
+                    <p id="profile-message">How you doin?</p>
                 </div>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
             </div>
 
         </section>
@@ -120,39 +132,73 @@
                 <div class="portfolio-item">
                     <img id="portfolio1" src="images/hotel-jenni.png" alt="Portfolio Item 1">
                     <h3>Console Application - Hotel Booking App</h3>
-                    <p>Description of project 1.</p>
                     <button class="btn btn1" data-url="https://github.com/jenn-html/HotelApp1.git">View Project</button>
                 </div>
                 <div class="portfolio-item">
                     <img id="portfolio2" src="images/systementor-zoo-desktop.png" alt="Portfolio Item 2">
                     <h3>Systementor Zoo Website</h3>
-                    <p>Description of project 2.</p>
                     <button class="btn btn2" data-url="https://github.com/jenn-html/systementor-zoo-jennifer.git">View
                         Project</button>
                 </div>
                 <div class="portfolio-item">
                     <img id="portfolio3" src="images/portfolio3.png" alt="Portfolio Item 3">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3.</p>
-                    <button class="btn btn3" data-url="https://github.com/jenn-html/HotelApp3.git">View Project</button>
+                    <h3>Follow my journey</h3>
+                    <button class="btn btn3" data-url="https://github.com/jenn-html/">Coming soon</button>
                 </div>
             </div>
         </section>
-        <section id="about-section">
+        <section id="about-section" class="about-section">
             <h2>About</h2>
-            <p>Learn more about me.</p>
+            <ul>
+                <li><i class="fa-solid fa-wrench"></i>I Love solving problems!</li>
+                <li><i class="fa-solid fa-plane"></i>Always ready for new adventures.</li>
+                <li><i class="fa-solid fa-film"></i>Have watched all seasons of Friends way to many times.</li>
+                <li><i class="fa-solid fa-bolt"></i>If I ever had a superpower, it would be being able to travel in
+                    time.</li>
+                <li><i class="fa-solid fa-mug-hot"></i>I LOVE COFFEE</li>
+            </ul>
+
         </section>
-        <section id="contact-section">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-        </section>
-        <section id="cv-section">
-            <h2>My CV</h2>
-            <p>Download my CV.</p>
+        <section id="contact-section" class="contact-section">
+            <header class="contact-header">
+                <h2>Contact me</h2>
+                <p>Want to grab a coffee and talk about the weather? Feel free to reach out!</p>
+            </header>
+            <div class="form-weather">
+                <div class="form-container">
+                    <form action="https://formsubmit.co/jenniferorrbon@gmail.com" method="POST">
+                        <div class="form-group"><label for="firstname">
+                                *First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-group"><label for="lastname">*Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-group"><label for="email">*Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group"><label for="message">*Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-group-button">
+                            <p>* Required fields</p>
+                            <button class="btn" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="weather-container">
+                    <div id="weatherInfo"></div>
+                    <div id="weatherMessage"></div>
+                    <div id="weatherAlways"></div>
+                    <div class="download-cv-section">
+                        <p>If you haven't already, you can download my CV here</p>
+                        <a href="/files/cv.pdf" download class="btn--download">Download CV</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
         <a href="https://www.flaticon.com/free-icons/sql-server" title="sql server icons">Sql server icons created by
             Freepik - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik -
@@ -165,6 +211,7 @@
             Freepik - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by
             Pixel perfect - Flaticon</a>
+        <p>&copy; 2026 Jennifer Orrbon.</p>
     </footer>
 </body>
 

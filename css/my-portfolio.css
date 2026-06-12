@@ -23,14 +23,22 @@
 .portfolio-item img {
     width: 200px;
     height: 200px;
+    background-color: white;
     object-fit: cover;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 5px solid var(--secondary-color1);
+    border: 5px solid white;
+    transition-property: width, height;
+    transition-duration: 1s
+}
 
+.portfolio-item img:hover {
+    width: 300px;
+    height: 300px;
 }
 
 .portfolio-item {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 20px;
     width: 250px;

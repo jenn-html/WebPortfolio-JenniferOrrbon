@@ -1,0 +1,126 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.form-group,
+.form-group-button {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.form-group-button button {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid rgb(188, 134, 237, 0.5);
+    box-shadow: inset 0 0 5px rgba(248, 208, 248, 0.211);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(253, 251, 253, 0.908);
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+    border-color: var(--primary-color2);
+    background-color: rgba(255, 220, 250, 0.552);
+}
+
+.form-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-weather div {
+    margin: 10px;
+}
+
+.weather-container,
+.form-container {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.form-container {
+    background-color: var(--accent-color-light);
+    /* border-radius: 10px; */
+}
+
+.weather-container,
+.download-cv-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        height: auto;
+    }
+
+    .form-weather {
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+}

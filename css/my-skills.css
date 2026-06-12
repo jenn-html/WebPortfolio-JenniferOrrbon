@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 40px 0;
-    background-color: var(--background-color);
+    padding: 40px;
 }
 
 .skill-container {
@@ -13,7 +12,7 @@
     grid-auto-rows: auto;
     gap: 1vw;
     background-color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 20px;
     width: 90vw;
     height: auto;
