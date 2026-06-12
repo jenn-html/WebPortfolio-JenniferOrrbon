@@ -1,0 +1,9 @@
+.about-section ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 2;
+}

@@ -32,7 +32,7 @@ nav {
     text-align: center;
     justify-content: space-around;
     /* background: var(--gradient-background); */
-    background-color: var(--accent-color-light);
+    background-color: var(--blue-color-from-post-it);
     width: 100%;
 }
 

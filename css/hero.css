@@ -49,12 +49,18 @@
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: 8vw;
+    padding: 10px;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 20px;
+    padding: 10px
+}
+
+h3 {
+    font-size: 2.5vw;
 }
 
 #profile-message {
@@ -67,6 +73,12 @@ h2 {
     right: 26vw;
     font-size: 4vw;
     transform: rotate(5deg);
+}
+
+.fa-brands {
+    font-size: 3rem;
+    width: 10vw;
+    color: var(--secondary-color1);
 }
 
 @media (max-width: 800px) {
