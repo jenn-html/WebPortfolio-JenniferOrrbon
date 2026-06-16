@@ -75,6 +75,13 @@
     z-index: 11;
 }
 
+.arrow-img {
+    height: 10vw;
+    position: absolute;
+    right: 20vw;
+    transform: rotate(2deg);
+}
+
 .reference-item:hover .person-message {
     visibility: visible;
 }
@@ -131,6 +138,13 @@
 
     .img6 {
         right: 5vw;
+
+    }
+
+    .arrow-img {
+        height: 20vw;
+        position: absolute;
+        right: 10vw;
 
     }
 }

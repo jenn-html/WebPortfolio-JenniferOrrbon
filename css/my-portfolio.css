@@ -25,7 +25,6 @@
     height: 300px;
     background-color: white;
     object-fit: cover;
-    /* border-radius: 10px; */
     border: 5px solid var(--secondary-color1);
     border: 5px solid white;
     transition-property: width, height;
@@ -33,18 +32,24 @@
 }
 
 .portfolio-item img:hover {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .portfolio-item {
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
     padding: 20px;
-
+    border: 1px dotted rgba(211, 203, 255);
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.portfolio-item h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    color: var(--secondary-color1);
 }

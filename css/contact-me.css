@@ -101,6 +101,10 @@ textarea:active {
     flex-direction: column;
 }
 
+.weather-container {
+    background-color: var(--pink-color-from-post-it);
+}
+
 
 
 @media (max-width: 800px) {
