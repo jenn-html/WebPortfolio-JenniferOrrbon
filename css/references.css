@@ -101,5 +101,36 @@
 
     .person-message {
         bottom: 37vw;
+        z-index: 11;
+    }
+
+    .img1 {
+        left: 5vw;
+
+    }
+
+    .img2 {
+        left: 18vw;
+
+    }
+
+    .img3 {
+        left: 33vw;
+
+    }
+
+    .img4 {
+        right: 33vw;
+
+    }
+
+    .img5 {
+        right: 18vw;
+
+    }
+
+    .img6 {
+        right: 5vw;
+
     }
 }
