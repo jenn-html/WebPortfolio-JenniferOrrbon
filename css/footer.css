@@ -19,11 +19,11 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var(--primary-color1);
+    color: var(--secondary-color1);
 }
 
 .footer-links ul li a:hover {
-    color: var(--orange-color-from-post-it);
+    color: var(--pink-color-from-post-it);
 }
 
 .footer-social-media ul {

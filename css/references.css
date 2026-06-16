@@ -72,6 +72,7 @@
     background-color: var(--secondary-color1);
     padding: 20px;
     border-radius: 20px;
+    z-index: 11;
 }
 
 .reference-item:hover .person-message {
@@ -101,7 +102,6 @@
 
     .person-message {
         bottom: 37vw;
-        z-index: 11;
     }
 
     .img1 {
