@@ -101,3 +101,5 @@ function mouseOver() {
 function mouseOut() {
     profileMessage.style.visibility = "hidden";
 }
+//---------------------------mousover mousout on persons img -------------------
+
