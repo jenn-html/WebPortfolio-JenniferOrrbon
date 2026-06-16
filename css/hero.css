@@ -82,7 +82,8 @@ h3 {
     font-size: 3rem;
     width: 10vw;
     color: var(--secondary-color1);
-    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .fa-brands:hover {
