@@ -7,3 +7,12 @@
     font-size: 1.3rem;
     line-height: 2;
 }
+
+.about-header {
+
+    margin-top: 20px;
+}
+
+.about-section {
+    padding: 40px;
+}

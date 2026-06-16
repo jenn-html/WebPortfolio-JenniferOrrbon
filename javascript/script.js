@@ -1,12 +1,12 @@
-// --------------buttons go to my projects on github----------------------
-const buttons = document.querySelectorAll(".btn");
+// // --------------buttons go to my projects on github----------------------
+// const buttons = document.querySelectorAll(".btn");
 
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        const url = btn.dataset.url;
-        window.location.href = url;
-    });
-});
+// buttons.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         const url = btn.dataset.url;
+//         window.location.href = url;
+//     });
+// });
 
 // --------------Weather API -----------------------
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
@@ -101,3 +101,5 @@ function mouseOver() {
 function mouseOut() {
     profileMessage.style.visibility = "hidden";
 }
+//---------------------------mousover mousout on persons img -------------------
+
