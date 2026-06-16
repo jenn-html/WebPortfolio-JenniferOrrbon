@@ -110,7 +110,7 @@ textarea:active {
     }
 
     .form-weather {
-        margin-top: 10vh;
+        margin-top: 0;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -122,5 +122,11 @@ textarea:active {
     h2 {
         font-size: 2rem;
         margin-top: 10px;
+    }
+
+    .weather-container,
+    .download-cv-section {
+        margin: 0;
+        padding: 0;
     }
 }

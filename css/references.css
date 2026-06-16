@@ -55,7 +55,6 @@
 .img4:hover,
 .img5:hover,
 .img6:hover {
-    /* transform: scale(1.4); */
     width: 20vw;
     height: auto;
     z-index: 10;
@@ -77,4 +76,30 @@
 
 .reference-item:hover .person-message {
     visibility: visible;
+}
+
+@media (max-width: 800px) {
+    .reference-container {
+        height: 65vw;
+    }
+
+    .reference-container img {
+        width: 20vw;
+    }
+
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img3:hover,
+    .img4:hover,
+    .img5:hover,
+    .img6:hover {
+        width: 30vw;
+        height: auto;
+        z-index: 10;
+    }
+
+    .person-message {
+        bottom: 37vw;
+    }
 }

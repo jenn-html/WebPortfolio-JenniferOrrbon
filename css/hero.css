@@ -94,6 +94,8 @@ h3 {
 
     .hero-section {
         height: auto;
+        width: 100%;
+        margin-top: 3vh;
     }
 
     .hero-content {
@@ -111,5 +113,13 @@ h3 {
     h2 {
         font-size: 2rem;
         margin-top: 10px;
+    }
+
+    #profile-image {
+        margin-bottom: 0;
+    }
+
+    .social-media ul li {
+        padding: 20px;
     }
 }
