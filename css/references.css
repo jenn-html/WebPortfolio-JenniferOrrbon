@@ -1,8 +1,13 @@
 .reference-container {
     display: flex;
     flex-direction: row;
-    height: 50vw;
+    height: 35vw;
     position: relative;
+}
+
+.references-header {
+    padding: 40px;
+    margin-top: 20px;
 }
 
 .reference-container img {

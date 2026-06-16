@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 40px;
 }
@@ -11,7 +12,8 @@
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
     gap: 1vw;
-    background-color: white;
+    justify-items: center;
+    /* background-color: white; */
     /* border-radius: 10px; */
     padding: 20px;
     width: 90vw;
@@ -54,55 +56,79 @@
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
-    /* Safari */
     backface-visibility: hidden;
 }
 
 .flip-box-back {
-    font-size: 1.5vw;
-    margin-top: 4vw;
+    font-size: 1vw;
+    /* margin-top: 1vw; */
     background-color: transparent;
     color: var(--secondary-color1);
     transform: rotateY(180deg);
 }
 
 .skill-csharp {
-    background-image: url('../images/grön-post-it.png');
+    background-image: url('../images/grön-post-it-removebg-preview.png');
     background-size: cover;
     background-position: center;
-
+    transform: rotate(3deg);
 }
 
 .skill-bootstrap {
-    background-image: url('../images/blå-post-it.png');
+    background-image: url('../images/blå-post-it-removebg-preview.png');
     background-size: cover;
     background-position: center;
-
+    transform: rotate(-4deg);
 }
 
 .skill-javascript {
-    background-image: url('../images/rosa-post-it.png');
+    background-image: url('../images/rosa-post-it-removebg-preview.png');
     background-size: cover;
     background-position: center;
+    transform: rotate(-4deg);
 }
 
 .skill-html {
-    background-image: url('../images/gul-post-it.png');
+    background-image: url('../images/gul-post-it-removebg-preview.png');
 
     background-size: cover;
     background-position: center;
 }
 
 .skill-css {
-    background-image: url('../images/ljuslila-post-it.png');
+    background-image: url('../images/ljuslila-post-it-removebg-preview.png');
     background-size: cover;
     background-position: center;
-
+    transform: rotate(2deg);
 }
 
 .skill-sql {
-    background-image: url('../images/orange-post-it.png');
-
+    background-image: url('../images/orange-post-it-removebg-preview.png');
     background-size: cover;
     background-position: center;
+    transform: rotate(-2deg);
+}
+
+@media (max-width: 800px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 1vw;
+    }
+
+    .flip-box {
+        background-color: transparent;
+        width: 20vw;
+        height: 20vw;
+        /* perspective: 1000px; */
+    }
+
+    .my-skills-flip-box img {
+        margin-top: 6.2vw;
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+    }
+
 }
