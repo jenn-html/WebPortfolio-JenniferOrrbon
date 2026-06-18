@@ -6,25 +6,27 @@
     padding: 0;
 }
 
+
+
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    position: relative;
     margin-top: 10vh;
     height: 90vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #profile-image {
-    width: 200px;
-    height: 250px;
+    width: 20vw;
+    height: 25vw;
     object-fit: cover;
     margin-bottom: 20px;
     align-items: right;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
-    /* border: 1px solid var(--accent-color); */
     border-radius: 10px;
     margin: 30px;
     transform: rotate(8deg);
@@ -50,13 +52,13 @@
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 9vw;
     padding: 10px;
     padding-bottom: 0;
 }
 
 h2 {
-    font-size: 5vw;
+    font-size: 6vw;
     margin-top: 20px;
     padding: 10px;
     padding-top: 0;
@@ -79,7 +81,7 @@ h3 {
 }
 
 .fa-brands {
-    font-size: 3rem;
+    font-size: 4vw;
     width: 10vw;
     color: var(--secondary-color1);
     margin-left: 5px;
@@ -115,11 +117,22 @@ h3 {
         margin-top: 10px;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
     #profile-image {
         margin-bottom: 0;
+        width: 60vw;
+        height: 75vw;
     }
 
     .social-media ul li {
         padding: 20px;
+    }
+
+    .fa-brands {
+        font-size: 3rem;
+        width: 10vw;
     }
 }

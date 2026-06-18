@@ -54,12 +54,19 @@ textarea {
     border: 1px solid rgb(188, 134, 237, 0.5);
     box-shadow: inset 0 0 5px rgba(248, 208, 248, 0.211);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.3vw;
     background-color: rgba(253, 251, 253, 0.908);
+}
+
+#weatherInfo,
+#weatherMessage,
+#weatherAlways {
+    font-size: 1.3vw;
 }
 
 label {
     padding-bottom: 10px;
+    font-size: 1.3vw;
 }
 
 input:hover,
@@ -105,6 +112,9 @@ textarea:active {
     background-color: var(--pink-color-from-post-it);
 }
 
+.btn-send {
+    width: 100%;
+}
 
 
 @media (max-width: 800px) {
@@ -119,18 +129,35 @@ textarea:active {
         grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 4.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-        margin-top: 10px;
-    }
-
     .weather-container,
-    .download-cv-section {
+    .download-cv-section,
+    .form-weather,
+    .btn-download {
         margin: 0;
         padding: 0;
+    }
+
+    .contact-section {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    label {
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.3rem;
+    }
+
+    #weatherInfo,
+    #weatherMessage,
+    #weatherAlways {
+        font-size: 1.3rem;
     }
 }

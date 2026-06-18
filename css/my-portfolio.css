@@ -53,3 +53,15 @@
     padding-top: 10px;
     color: var(--secondary-color1);
 }
+
+@media (max-width: 800px) {
+    .portfolio-item img {
+        width: 80vw;
+        height: 300px;
+
+    }
+
+    .portfolio-container {
+        width: 100vw;
+    }
+}
