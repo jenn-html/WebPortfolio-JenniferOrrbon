@@ -1,3 +1,4 @@
+/* "Rules control the fun!" */
 *,
 *::before,
 *::after {
@@ -41,6 +42,9 @@
     margin-top: 5vh;
     padding-bottom: 5vh;
 }
+
+/* Could this layout BE any more responsive?! */
+
 
 .background-img {
     width: 100%;

@@ -1,8 +1,9 @@
 footer {
     padding: 40px;
     margin: 40px;
-    background-color: rgba(255, 255, 255, 0.543);
     width: 100vw;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.461);
 }
 
 .footer-container {
@@ -12,6 +13,7 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 
 .footer-links ul {
     display: grid;
@@ -23,7 +25,7 @@ footer {
 
 .footer-links ul li a {
     color: var(--secondary-color1);
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .footer-links ul li a:hover {
@@ -37,10 +39,10 @@ footer {
     align-items: center;
 }
 
-.footer-social-media ul li a {
+.footer-social-media ul li a i {
 
     color: var(--secondary-color1);
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 @media (max-width: 800px) {

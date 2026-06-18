@@ -21,8 +21,8 @@
 }
 
 .portfolio-item img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: white;
     object-fit: cover;
     border: 5px solid var(--secondary-color1);
@@ -32,8 +32,8 @@
 }
 
 .portfolio-item img:hover {
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
 }
 
 .portfolio-item {
@@ -57,11 +57,16 @@
 @media (max-width: 800px) {
     .portfolio-item img {
         width: 80vw;
-        height: 300px;
+        height: 80vw;
 
     }
 
     .portfolio-container {
         width: 100vw;
+    }
+
+    .portfolio-item img:hover {
+        width: 85vw;
+        height: 85vw;
     }
 }

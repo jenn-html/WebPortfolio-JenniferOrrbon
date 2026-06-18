@@ -102,4 +102,8 @@ a:active {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    #my-name {
+        font-size: 2rem;
+    }
 }
