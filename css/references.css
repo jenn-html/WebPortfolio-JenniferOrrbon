@@ -10,6 +10,10 @@
     margin-top: 20px;
 }
 
+.reference-item p {
+    font-style: italic;
+}
+
 .reference-container img {
     width: 15vw;
     position: absolute;
@@ -55,7 +59,6 @@
 .img4:hover,
 .img5:hover,
 .img6:hover {
-    /* transform: scale(1.4); */
     width: 20vw;
     height: auto;
     z-index: 10;
@@ -73,8 +76,79 @@
     background-color: var(--secondary-color1);
     padding: 20px;
     border-radius: 20px;
+    z-index: 11;
+}
+
+.arrow-img {
+    height: 10vw;
+    position: absolute;
+    right: 20vw;
+    transform: rotate(2deg);
 }
 
 .reference-item:hover .person-message {
     visibility: visible;
+}
+
+@media (max-width: 800px) {
+    .reference-container {
+        height: 65vw;
+    }
+
+    .reference-container img {
+        width: 20vw;
+    }
+
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img3:hover,
+    .img4:hover,
+    .img5:hover,
+    .img6:hover {
+        width: 30vw;
+        height: auto;
+        z-index: 10;
+    }
+
+    .person-message {
+        bottom: 37vw;
+    }
+
+    .img1 {
+        left: 5vw;
+
+    }
+
+    .img2 {
+        left: 18vw;
+
+    }
+
+    .img3 {
+        left: 33vw;
+
+    }
+
+    .img4 {
+        right: 33vw;
+
+    }
+
+    .img5 {
+        right: 18vw;
+
+    }
+
+    .img6 {
+        right: 5vw;
+
+    }
+
+    .arrow-img {
+        height: 20vw;
+        position: absolute;
+        right: 10vw;
+
+    }
 }

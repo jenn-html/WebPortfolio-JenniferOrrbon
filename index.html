@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/my-portfolio.css">
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/references.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
@@ -21,6 +22,7 @@
 </head>
 
 <body id="top-of-page">
+    <img class="background-img" src="images/linjerat-a4.jpg" alt="bakgrundsbild linjerat A4">
     <header class="main-header">
         <nav>
             <a id="my-name" href="#top-of-page">Jennifer Orrbon</a>
@@ -28,26 +30,26 @@
                 <li><a href="#skills-section">My skills</a></li>
                 <li><a href="#portfolio-section">Portfolio</a></li>
                 <li><a href="#about-section">About</a></li>
-                <li><a href="#contact-section">Contact</a></li>
                 <li><a href="#references-section">References</a></li>
-                <li><a href="/files/cv.pdf" download>My CV</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="/files/cv.pdf" download><i class="fa-solid fa-download"></i> CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero-section" class="hero-section">
+
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Jennifer Orrbon</h1>
                     <h2>System Developer .Net</h2>
-                    <!-- <a href="/files/cv.pdf" download class="btn--download">Download CV</a> -->
                 </div>
                 <div class="profile-image">
                     <img id="profile-image" src="images/profilbild.jpg" alt="Profile Image">
                     <p id="profile-message">How you doin?</p>
                 </div>
             </div>
-            <div>
+            <div class="social-media">
                 <ul>
                     <li><a href="https://www.facebook.com/jennifer.orrbon" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-brands fa-facebook"></i></a></li>
@@ -139,7 +141,7 @@
             <div class="portfolio-container">
                 <div class="portfolio-item">
                     <img id="portfolio1" src="images/hotel-jenni.png" alt="Portfolio Item 1">
-                    <h3>Console Application - Hotel Booking App</h3>
+                    <h3>Console App - Hotel Booking App</h3>
                     <a class="btn btn1" href="https://github.com/jenn-html/HotelApp1/blob/master/README.md"
                         target="_blank" rel="noopener" aria-label="View Project (öppnas i ny flik)">
                         View Project
@@ -157,113 +159,156 @@
                 <div class="portfolio-item">
                     <img id="portfolio3" src="images/portfolio3.png" alt="Portfolio Item 3">
                     <h3>Follow my journey</h3>
+                    <!-- We were on a break! -->
                     <a class="btn btn3" href="https://github.com/jenn-html/" target="_blank" rel="noopener"
                         aria-label="Coming soon (öppnas i ny flik)">
                         Coming soon
                     </a>
-                    <!-- <button class="btn btn3" data-url="https://github.com/jenn-html/">Coming soon</button> -->
                 </div>
             </div>
         </section>
         <section id="about-section" class="about-section">
             <header class="about-header">
-                <h2>About</h2>
+                <h2>About me</h2>
+                <p>What´s better than a little puzzle to find out?</p>
             </header>
 
-            <ul>
-                <li><i class="fa-solid fa-wrench"></i>I Love solving problems!</li>
-                <li><i class="fa-solid fa-plane"></i>Always ready for new adventures.</li>
-                <li><i class="fa-solid fa-film"></i>Have watched all seasons of Friends way to many times.</li>
-                <li><i class="fa-solid fa-bolt"></i>If I ever had a superpower, it would be being able to travel in
-                    time.</li>
-                <li><i class="fa-solid fa-mug-hot"></i>I LOVE COFFEE</li>
-            </ul>
-
-        </section>
-        <section id="contact-section" class="contact-section">
-            <header class="contact-header">
-                <h2>Contact me</h2>
-                <p>Want to grab a coffee and talk about the weather? Feel free to reach out!</p>
-            </header>
-            <div class="form-weather">
-                <div class="form-container">
-                    <form action="https://formsubmit.co/jenniferorrbon@gmail.com" method="POST">
-                        <div class="form-group"><label for="firstname">
-                                *First Name:</label>
-                            <input type="text" id="firstname" name="firstname" required>
-                        </div>
-                        <div class="form-group"><label for="lastname">*Last Name:</label>
-                            <input type="text" id="lastname" name="lastname" required>
-                        </div>
-                        <div class="form-group"><label for="email">*Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group"><label for="message">*Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <div class="form-group-button">
-                            <p>* Required fields</p>
-                            <button class="btn" type="submit">Send</button>
-                        </div>
-                    </form>
+            <div class="puzzle-piece-container">
+                <div class="puzzle-piece piece1">
+                    <img class="puzzle-img1" src="images/puzzle-wood.png" alt="puzzle">
+                    <p class="puzzle-description">Hi, <strong>Let's piece it together:</strong>
+                        If my life were a Friends episode, it would be called
+                        "The One with the Coffee-Fueled Problem Solver".</p>
                 </div>
-                <div class="weather-container">
-                    <div id="weatherInfo"></div>
-                    <div id="weatherMessage"></div>
-                    <div id="weatherAlways"></div>
-                    <div class="download-cv-section">
-                        <p>If you haven't already, you can download my CV here</p>
-                        <a href="/files/cv.pdf" download class="btn--download">Download CV</a>
-                    </div>
+                <div class="puzzle-piece piece4">
+                    <img class="puzzle-img4" src="images/puzzle-wood.png" alt="puzzle">
+                    <p class="puzzle-description">As a natural problem solver, I know exactly how to handle
+                        sudden changes—think of me as the person shouting
+                        "Pivot! Pivot!" until the job gets done right.
+
+                    </p>
+                </div>
+                <div class="puzzle-piece piece2">
+                    <img class="puzzle-img2" src="images/puzzle-wood.png" alt="puzzle">
+                    <p class="puzzle-description"> My work is fueled by passion – and quite a lot of coffee
+                        (most likely inspired by the fact that I have watched
+                        the TV show Friends a few too many times).</p>
+                </div>
+                <div class="puzzle-piece piece3">
+                    <img class="puzzle-img3" src="images/puzzle-wood.png" alt="puzzle">
+                    <p class="puzzle-description"> I have always loved tackling new puzzles.
+                        Because of that, I rarely say no to a challenge and view
+                        both work and life as an exciting adventure!</p>
                 </div>
             </div>
+
         </section>
         <section id="references-section" class="references-section">
             <header class="references-header">
                 <h2>References</h2>
                 <p>Hear what people have to say about me!</p>
             </header>
+            <img class="arrow-img" src="images/arrow.png" alt="arrow">
             <div class="reference-container">
                 <div class="reference-item">
                     <img id="person" class="img1" src="images/person1.png" alt="">
-                    <p class="person-Message"> -Jennifer codes C# like Monica cooks</p>
+                    <p class="person-Message"> "Jennifer codes like Monica cleans"</p>
                 </div>
                 <div class="reference-item">
                     <img id="person" class="img2" src="images/person2.png" alt="">
-                    <p class="person-Message"> -Jennifer styles CSS like Rachel dress</p>
+                    <p class="person-Message"> "Jennifer styles CSS like Rachel dresses"</p>
                 </div>
                 <div class="reference-item">
                     <img id="person" class="img3" src="images/person3.png" alt="">
-                    <p class="person-Message"> -She <em>thinks</em> she's fun like Chandler</p>
+                    <p class="person-Message"> "She <strong>THINKS</strong> she's fun like Chandler"</p>
                 </div>
                 <div class="reference-item">
                     <img id="person" class="img4" src="images/person4.png" alt="">
-                    <p class="person-Message"> -She loves solving problems as much as Joe loves sandwiches</p>
+                    <p class="person-Message"> "She loves solving problems as much as Joe loves sandwiches"</p>
                 </div>
                 <div class="reference-item">
                     <img id="person" class="img5" src="images/person5.png" alt="">
-                    <p class="person-Message"> -She is laid back like Phoebe</p>
+                    <p class="person-Message"> "She is loyal like Phoebe"</p>
                 </div>
                 <div class="reference-item">
                     <img id="person" class="img6" src="images/person6.png" alt="">
-                    <p class="person-Message"> -She has a heart like Ross</p>
+                    <p class="person-Message"> "She is determined like Ross"</p>
                 </div>
             </div>
         </section>
+        <section id="contact-section" class="contact-section">
+            <header class="contact-header">
+                <h2>Contact me</h2>
+                <!-- "I’m not great at the advice. Can I interest you in a sarcastic comment?" -->
+                <p>Want to grab a coffee and talk about the weather? Feel free to reach out!</p>
+            </header>
+            <div class="form-weather">
+
+                <div class="form-container">
+                    <div class="weather-container">
+                        <div id="weatherInfo"></div>
+                        <div id="weatherAlways"></div>
+                    </div>
+                    <form target="_self" onsubmit="return validateForm()"
+                        action="https://formsubmit.co/jenniferorrbon@gmail.com" method="POST">
+                        <div class="form-group"><label for="firstname">
+                                *First Name:</label>
+                            <input type="text" id="firstname" name="firstname" max-length="50"
+                                pattern="^[A-Za-zÅÅÄäÖö]+$" autofocus required>
+                        </div>
+                        <div class="form-group"><label for="lastname">*Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" max-length="50" pattern="^[A-Za-zÅÅÄäÖö]+$"
+                                required>
+                        </div>
+                        <div class="form-group"><label for="email">*Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group"><label for="message">*Message:</label>
+                            <textarea id="message" name="message" max-length="1000" required></textarea>
+                        </div>
+                        <div class="form-group-button">
+                            <p>* Required fields</p>
+                            <input class="btn btn-send" value="Send" type="submit"></input>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="download-cv-section">
+                    <p>If you haven't already, you can download my CV here</p>
+                    <a href="/files/cv.pdf" download class="btn--download">Download CV</a>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/sql-server" title="sql server icons">Sql server icons created by
-            Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik -
-            Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/hashtag" title="hashtag icons">Hashtag icons created by Freepik -
-            Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by iconsimple -
-            Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by
-            Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by
-            Pixel perfect - Flaticon</a>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#skills-section">My skills</a></li>
+                    <li><a href="#portfolio-section">Check out my work!</a></li>
+                    <li><a href="#about-section">About me</a></li>
+                    <li><a href="#references-section">References</a></li>
+                    <li><a href="#contact-section">Contact me</a></li>
+                    <li><a href="/files/cv.pdf" download><i class="fa-solid fa-download"></i> CV</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/jennifer.orrbon" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/jenn-html" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li><a href="https://discord.com/users/1460180161122013420" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jennifer-orrbon-a5a715410/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <p>&copy; 2026 Jennifer Orrbon.</p>
     </footer>
 </body>

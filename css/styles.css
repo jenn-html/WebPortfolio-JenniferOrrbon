@@ -1,3 +1,4 @@
+/* "Rules control the fun!" */
 *,
 *::before,
 *::after {
@@ -20,7 +21,7 @@
     --pink-darker-color-from-post-it-transparent: rgba(255, 191, 202, 0.8);
     --blue-color-from-post-it: rgba(174, 215, 236);
 
-    --primary-color2: #4d7b93;
+    --primary-color2: #2d7196;
     --primary-color1: #ec95e3;
     --secondary-color1: #8351a8;
     --secondary-color2: #1a2c54;
@@ -37,15 +38,21 @@
 .contact-section,
 .skills-section,
 .references-section {
-    /* background-color: rgba(255, 255, 255, 0.637); */
-    /* border-radius: 10px; */
     width: 90vw;
     margin-top: 5vh;
     padding-bottom: 5vh;
 }
 
+/* Could this layout BE any more responsive?! */
+
+
+.background-img {
+    width: 100%;
+    background-repeat: repeat;
+}
+
 p {
-    font-size: 1.3rem;
+    font-size: 1.3vw;
 }
 
 html {
@@ -65,7 +72,7 @@ h3 {
 .portfolio-section h2,
 .about-header h2,
 .references-header h2 {
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .btn {
@@ -73,7 +80,7 @@ h3 {
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 1px 1px 5px #000000;
@@ -103,7 +110,7 @@ h3 {
     background-color: var(--green-darker-color-from-post-it-transparent);
     color: var(--text-color-light);
     padding: 10px 20px;
-    font-size: 1.8rem;
+    font-size: 1.5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 50px;
     cursor: pointer;
@@ -112,4 +119,41 @@ h3 {
     text-shadow: 2px 2px 10px #063810;
     border: 1px solid var(--green-color-from-post-it-transparent);
     transition: background-color 0.3s, transform 0.1s;
+}
+
+@media (max-width: 800px) {
+
+    .portfolio-section,
+    .hero-section,
+    .about-section,
+    .contact-section,
+    .skills-section,
+    .references-section {
+        width: 100vw;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .btn,
+    .btn--download {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .skills-header h2,
+    .about-header h2,
+    .contact-section h2,
+    .portfolio-section h2,
+    .about-header h2,
+    .references-header h2,
+    .main-header h2 {
+        font-size: 4rem;
+    }
 }

@@ -13,8 +13,6 @@
     grid-auto-rows: auto;
     gap: 1vw;
     justify-items: center;
-    /* background-color: white; */
-    /* border-radius: 10px; */
     padding: 20px;
     width: 90vw;
     height: auto;
@@ -24,7 +22,7 @@
     background-color: transparent;
     width: 10vw;
     height: 10vw;
-    /* perspective: 1000px; */
+    perspective: 1000px;
 }
 
 .flip-box-inner {
@@ -35,8 +33,12 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
     color: var(--text-color-light);
-    font-size: 1.5vh;
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flip-box-back h2 {
+    font-size: 3vw;
 }
 
 .flip-box:hover .flip-box-inner {
@@ -61,7 +63,6 @@
 
 .flip-box-back {
     font-size: 1vw;
-    /* margin-top: 1vw; */
     background-color: transparent;
     color: var(--secondary-color1);
     transform: rotateY(180deg);
@@ -121,7 +122,7 @@
         background-color: transparent;
         width: 20vw;
         height: 20vw;
-        /* perspective: 1000px; */
+        perspective: 1000px;
     }
 
     .my-skills-flip-box img {
@@ -131,4 +132,7 @@
         object-fit: contain;
     }
 
+    .flip-box-back h2 {
+        font-size: 2rem;
+    }
 }

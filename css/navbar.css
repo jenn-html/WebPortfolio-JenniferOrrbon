@@ -10,9 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ---
-#b45dbb
-*/
 .main-header {
     display: flex;
     flex-direction: row;
@@ -31,7 +28,6 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    /* background: var(--gradient-background); */
     background-color: var(--blue-color-from-post-it);
     width: 100%;
 }
@@ -57,16 +53,15 @@ li .btn {
 a {
     text-decoration: none;
     color: var(--text-color-light);
-    font-size: 1rem;
+    font-size: 1.5vw;
     transition: color 0.2s ease;
 }
 
 #my-name {
-    font-size: 2.5rem;
+    font-size: 2vw;
     font-weight: bold;
     color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
-    /* padding: 0.5rem 0; */
 }
 
 a:hover {
@@ -82,18 +77,33 @@ a:active {
     color: var(--accent-color);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 800px) {
     nav {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0;
     }
-    
+
     ul {
         justify-content: center;
         width: 100%;
     }
-    
+
     a {
-        padding: 0.75rem; /* Något mindre knappar på mobilen */
-/* } */
-/* } */
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    .main-header {
+        bottom: 0;
+        top: auto;
+    }
+
+    nav li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #my-name {
+        font-size: 2rem;
+    }
+}
