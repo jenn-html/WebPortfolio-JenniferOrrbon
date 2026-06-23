@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100wv;
+    background-image: url(/images/linjerat-a4.jpg);
+}
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vh;
+    background-color: color-mix(in srgb, var(--green-color-from-post-it) 40%, transparent);
+    padding: 0 30px 0 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px;
+}
+
+h1 {
+    font-size: 7rem;
+    height: 4vw;
+}
+
+p {
+    color: var(--text-color-dark);
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    background-color: var(--green-darker-color-from-post-it-transparent);
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 0 0 15px #0000006e;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(74, 193, 72, 0.463);
+    color: white;
+}
+
+a:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.541) inset;
+}
