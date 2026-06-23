@@ -23,7 +23,6 @@ fetch(url)
 
         if (temperature < 0) {
             weatherInfo.style.color = "lightblue";
-            weatherMessage.innerHTML = weatherInfoList[3];
         }
         else if (temperature < 10) {
             weatherInfo.style.color = "blue";
