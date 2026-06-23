@@ -69,7 +69,6 @@
     position: absolute;
     transition: visibility 0.2s ease;
     bottom: 27vw;
-    /* Justera denna så texten hamnar ovanför bilden */
     left: 50%;
     transform: translateX(-50%);
     color: var(--text-color-light);

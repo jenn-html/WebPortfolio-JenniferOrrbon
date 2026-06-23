@@ -98,7 +98,6 @@ textarea:active {
 
 .form-container {
     background-color: var(--accent-color-light);
-    /* border-radius: 10px; */
 }
 
 .weather-container,
