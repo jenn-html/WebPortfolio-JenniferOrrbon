@@ -83,10 +83,9 @@ h3 {
     font-size: 1.5vw;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 1px 1px 5px #000000;
-    text-shadow: 2px 2px 10px #7a1c71;
+    box-shadow: 0 0 15px #0000006e;
+    /* text-shadow: 2px 2px 10px #7a1c71; */
     margin-top: 20px;
-    border: 2px solid var(--pink-darker-color-from-post-it-transparent);
     transition: background-color 0.3s, transform 0.1s;
 }
 
@@ -102,8 +101,8 @@ h3 {
 
 .btn:active,
 .btn--download:active {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    transform: scale(0.98);
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.541) inset;
 }
 
 .btn--download {
@@ -115,9 +114,9 @@ h3 {
     border-radius: 50px;
     cursor: pointer;
     margin: 30px;
-    box-shadow: 1px 1px 5px #000000;
-    text-shadow: 2px 2px 10px #063810;
-    border: 1px solid var(--green-color-from-post-it-transparent);
+    box-shadow: 0 0 15px #0000006e;
+    /* text-shadow: 2px 2px 10px #063810; */
+    /* border: 1px solid var(--green-color-from-post-it-transparent); */
     transition: background-color 0.3s, transform 0.1s;
 }
 
