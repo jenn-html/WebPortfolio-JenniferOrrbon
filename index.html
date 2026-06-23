@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+            window.scrollTo(0, 0);
+        });
+    </script> -->
     <script src="https://kit.fontawesome.com/1d9d21891a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -256,7 +262,7 @@
                         <div class="form-group"><label for="firstname">
                                 *First Name:</label>
                             <input type="text" id="firstname" name="firstname" max-length="50" minlength="2"
-                                pattern="[A-Za-zÅÅÄäÖö\- ]+" autofocus required placeholder="Minimum 2 characters">
+                                pattern="[A-Za-zÅÅÄäÖö\- ]+" required placeholder="Minimum 2 characters">
                         </div>
                         <div class="form-group"><label for="lastname">*Last Name:</label>
                             <input type="text" id="lastname" name="lastname" max-length="50" minlength="2"
