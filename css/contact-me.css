@@ -100,11 +100,7 @@ textarea:active {
     padding: 20px;
     display: flex;
     flex-direction: column;
-
-
 }
-
-
 
 .btn-send {
     width: 100%;
