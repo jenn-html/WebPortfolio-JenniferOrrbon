@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my Webportfolio">
+    <meta name="description" content="Welcome to my Webportfolio - Jennifer Orrbon">
     <title>Jennifer Orrbon Webportfolio</title>
     <script src="https://kit.fontawesome.com/1d9d21891a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +24,7 @@
 </head>
 
 <body id="top-of-page">
-    <img class="background-img" src="images/linjerat-a4.jpg" alt="bakgrundsbild linjerat A4">
+    <!-- <img class="background-img" src="images/linjerat-a4.jpg" alt="bakgrundsbild linjerat A4"> -->
     <header class="main-header">
         <nav>
             <a id="my-name" href="#top-of-page">Jennifer Orrbon</a>
@@ -247,20 +247,14 @@
             <div class="form-weather">
 
                 <div class="form-container">
-                    <div class="weather-container">
-                        <div id="weatherInfo"></div>
-                    </div>
+
                     <form action="https://formsubmit.co/jenniferorrbon@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false" />
                         <input type="hidden" name="_template" value="table" />
                         <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html" />
-                        <div class="form-group"><label for="firstname">
-                                *First Name:</label>
-                            <input type="text" id="firstname" name="firstname" max-length="50" minlength="2"
-                                pattern="[A-Za-zÅÅÄäÖö\- ]+" required placeholder="Minimum 2 characters">
-                        </div>
-                        <div class="form-group"><label for="lastname">*Last Name:</label>
-                            <input type="text" id="lastname" name="lastname" max-length="50" minlength="2"
+                        <div class="form-group"><label for="name">
+                                *Name:</label>
+                            <input type="text" id="name" name="name" max-length="50" minlength="2"
                                 pattern="[A-Za-zÅÅÄäÖö\- ]+" required placeholder="Minimum 2 characters">
                         </div>
                         <div class="form-group"><label for="email">*Email:</label>
@@ -268,7 +262,7 @@
                                 placeholder="my@email.com" required>
                         </div>
                         <div class="form-group"><label for="message">*Message:</label>
-                            <textarea id="message" name="message" max-length="1000" required
+                            <textarea id="message" name="message" minlength="3" max-length="1000" required
                                 placeholder="Enter your message here"></textarea>
                         </div>
                         <div class="form-group-button">
@@ -277,44 +271,41 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="download-cv-section">
-                    <p>If you haven't already, you can download my CV here</p>
-                    <a href="/files/CV-2026.pdf" download class="btn--download">Download CV</a>
+                <div class="cv-weather-container">
+                    <div class="weather-container">
+                        <div id="weatherInfo"></div>
+                    </div>
+                    <div class="download-cv-section">
+                        <p>If you haven't already, you can download my CV here</p>
+                        <a href="/files/CV-2026.pdf" download class="btn--download">Download CV</a>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer-container">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#skills-section">My skills</a></li>
-                    <li><a href="#portfolio-section">Check out my work!</a></li>
-                    <li><a href="#about-section">About me</a></li>
-                    <li><a href="#references-section">References</a></li>
-                    <li><a href="#contact-section">Contact me</a></li>
-                    <li><a href="/files/CV-2026.pdf" download><i class="fa-solid fa-download"></i> CV</a></li>
-                </ul>
-            </div>
             <div class="footer-social-media">
                 <ul>
-                    <li><a href="https://www.facebook.com/jennifer.orrbon" target="_blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://github.com/jenn-html" target="_blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-github"></i></a>
+                    <li><a href="https://www.facebook.com/jennifer.orrbon" target="_blank" rel="noopener noreferrer"
+                            aria-label="Go to my facebook profile"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/jenn-html" target="_blank" rel="noopener noreferrer"
+                            aria-label="Go to my github profile"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li><a href="https://discord.com/users/1460180161122013420" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a></li>
+                            rel="noopener noreferrer" aria-label="Go to my discord profile"><i
+                                class="fa-brands fa-discord"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/jennifer-orrbon-a5a715410/" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            rel="noopener noreferrer" aria-label="Go to my linked in profile"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
+            <p>&copy; 2026 Jennifer Orrbon.</p>
         </div>
 
-        <p>&copy; 2026 Jennifer Orrbon.</p>
+
     </footer>
 </body>
 

@@ -63,6 +63,22 @@
     font-size: 1.3vw;
 }
 
+.piece1 {
+    color: var(--pink-dark-color);
+}
+
+.piece2 {
+    color: var(--purple-dark-color);
+}
+
+.piece3 {
+    color: var(--orange-dark-color);
+}
+
+.piece4 {
+    color: var(--green-dark-color);
+}
+
 .puzzle-piece:hover .puzzle-description {
     opacity: 1;
     transform: translateX(5vw);

@@ -9,14 +9,19 @@
 
 :root {
     --green-color-from-post-it: rgba(159, 225, 156);
+    --green-dark-color: rgb(92, 162, 107);
     --green-color-from-post-it-transparent: rgba(159, 225, 156, 0.526);
     --green-darker-color-from-post-it-transparent: rgba(129, 228, 124, 0.526);
     --orange-color-from-post-it: rgba(255, 218, 171);
+    --orange-dark-color: rgb(232, 156, 56);
     --yellow-color-from-post-it: rgba(255, 240, 173);
+    --yellow-dark-color: rgb(236, 223, 42);
     --yellow-color-from-post-it-transparent: rgba(255, 240, 173, 0.526);
     --yellow-darker-color-from-post-it-transparent: rgba(251, 231, 143, 0.526);
     --purple-color-from-post-it: rgba(211, 203, 255);
+    --purple-dark-color: rgb(129, 103, 161);
     --pink-color-from-post-it: rgba(255, 213, 220);
+    --pink-dark-color: rgb(181, 75, 140);
     --pink-color-from-post-it-transparent: rgba(255, 213, 220, 0.526);
     --pink-darker-color-from-post-it-transparent: rgba(255, 191, 202, 0.8);
     --blue-color-from-post-it: rgba(174, 215, 236);
@@ -42,6 +47,8 @@
     margin-top: 5vh;
     padding-bottom: 5vh;
 }
+
+
 
 /* Could this layout BE any more responsive?! */
 
@@ -76,10 +83,10 @@ h3 {
 }
 
 .btn {
-    background-color: var(--pink-color-from-post-it);
+    background-color: var(--purple-dark-color);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 1.5vw;
     border-radius: 50px;
     cursor: pointer;
@@ -94,7 +101,7 @@ h3 {
 }
 
 .btn--download:hover {
-    background-color: rgba(74, 193, 72, 0.463);
+    background-color: var(--green-darker-color-from-post-it-transparent);
     color: white;
 }
 
@@ -105,9 +112,9 @@ h3 {
 }
 
 .btn--download {
-    background-color: var(--green-darker-color-from-post-it-transparent);
+    background-color: var(--green-dark-color);
     color: var(--text-color-light);
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 1.5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 50px;
