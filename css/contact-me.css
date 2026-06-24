@@ -109,7 +109,7 @@ textarea:active {
 input::placeholder,
 textarea::placeholder {
     color: var(--blue-color-from-post-it);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -125,22 +125,6 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
     }
-
-    /* .weather-container,
-    .download-cv-section,
-    .form-weather,
-    .btn-download,
-    .form-container {
-        margin: 0;
-        padding: 0;
-    } */
-
-    /* .contact-section {
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-
-    } */
 
     label {
         padding-bottom: 10px;
