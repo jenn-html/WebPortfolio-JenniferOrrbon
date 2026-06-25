@@ -62,6 +62,8 @@ Projektet är uppdelat i en modulär struktur för att hålla koden ren och lät
 ├── javascript/
 │   └── script.js       # Väder-API & interaktiva händelser
 └── images/             # Bilder, ikoner och bakgrunder
+└── files/
+    └── CV-2026.pdf     # Nedladdningsbart CV för rekryterare
 ```
 
 ---
