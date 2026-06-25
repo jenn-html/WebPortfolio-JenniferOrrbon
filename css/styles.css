@@ -10,31 +10,20 @@
 :root {
     --green-color-from-post-it: rgba(159, 225, 156);
     --green-dark-color: rgb(92, 162, 107);
-    --green-color-from-post-it-transparent: rgba(159, 225, 156, 0.526);
     --green-darker-color-from-post-it-transparent: rgba(129, 228, 124, 0.526);
-    --orange-color-from-post-it: rgba(255, 218, 171);
     --orange-dark-color: rgb(232, 156, 56);
-    --yellow-color-from-post-it: rgba(255, 240, 173);
-    --yellow-dark-color: rgb(236, 223, 42);
-    --yellow-color-from-post-it-transparent: rgba(255, 240, 173, 0.526);
-    --yellow-darker-color-from-post-it-transparent: rgba(251, 231, 143, 0.526);
-    --purple-color-from-post-it: rgba(211, 203, 255);
     --purple-dark-color: rgb(129, 103, 161);
     --pink-color-from-post-it: rgba(255, 213, 220);
     --pink-dark-color: rgb(181, 75, 140);
-    --pink-color-from-post-it-transparent: rgba(255, 213, 220, 0.526);
     --pink-darker-color-from-post-it-transparent: rgba(255, 191, 202, 0.8);
     --blue-color-from-post-it: rgba(174, 215, 236);
-
     --primary-color2: #2d7196;
-    --primary-color1: #ec95e3;
     --secondary-color1: #8351a8;
     --secondary-color2: #1a2c54;
     --accent-color: #eec0ea;
     --accent-color-light: #99dbfe80;
     --text-color-dark: #000;
     --text-color-light: white;
-    --gradient-background: linear-gradient(to bottom, #56b7f334, #ffffff73, #4d7a937d);
 }
 
 .portfolio-section,
