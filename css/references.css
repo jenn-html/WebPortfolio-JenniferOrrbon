@@ -64,7 +64,7 @@
     z-index: 10;
 }
 
-.person-message {
+.person-Message {
     visibility: hidden;
     position: absolute;
     transition: visibility 0.2s ease;
@@ -85,7 +85,7 @@
     transform: rotate(2deg);
 }
 
-.reference-item:hover .person-message {
+.reference-item:hover .person-Message {
     visibility: visible;
 }
 

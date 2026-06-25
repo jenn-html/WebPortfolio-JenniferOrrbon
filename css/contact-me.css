@@ -4,8 +4,7 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
+    padding: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -14,11 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 form {
-    background-color: var(--background-color);
-    padding: 20px;
+    padding: 40px;
 }
 
 .form-group,
@@ -35,7 +34,7 @@ form {
     gap: 20px;
     width: 100%;
     align-items: center;
-    padding-right: 20px;
+
 }
 
 .form-group-button button {
@@ -80,22 +79,19 @@ textarea:active {
 .form-weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.632);
     align-items: center;
-    gap: 20px;
+
 }
 
-.form-weather div {
-    margin: 10px;
-}
-
-.weather-container,
-.form-container {
+.weather-container {
+    align-items: center;
     justify-content: space-between;
-    margin: 10px;
 }
 
 .form-container {
     background-color: var(--accent-color-light);
+    width: 100%;
 }
 
 .weather-container,
@@ -105,10 +101,6 @@ textarea:active {
     flex-direction: column;
 }
 
-.weather-container {
-    background-color: var(--pink-color-from-post-it);
-}
-
 .btn-send {
     width: 100%;
 }
@@ -116,7 +108,7 @@ textarea:active {
 input::placeholder,
 textarea::placeholder {
     color: var(--blue-color-from-post-it);
-    font-size: 1vw;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -124,27 +116,13 @@ textarea::placeholder {
 
     .contact-section {
         height: auto;
+        width: 100vw;
     }
 
     .form-weather {
         margin-top: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .weather-container,
-    .download-cv-section,
-    .form-weather,
-    .btn-download {
-        margin: 0;
-        padding: 0;
-    }
-
-    .contact-section {
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-
+        display: flex;
+        flex-direction: column;
     }
 
     label {
