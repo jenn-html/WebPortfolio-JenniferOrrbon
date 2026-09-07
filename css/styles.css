@@ -113,6 +113,15 @@ h3 {
     transition: background-color 0.3s, transform 0.1s;
 }
 
+@media (max-width: 1000px) {
+    .thanks-container {
+        width: 80vw;
+        margin-top: 0;
+        padding-bottom: 0;
+        min-height: 50vh;
+    }
+}
+
 @media (max-width: 800px) {
 
     .portfolio-section,
@@ -120,7 +129,8 @@ h3 {
     .about-section,
     .contact-section,
     .skills-section,
-    .references-section {
+    .references-section,
+    .thanks-container {
         width: 100vw;
         margin-top: 0;
         padding-bottom: 0;
@@ -145,7 +155,8 @@ h3 {
     .portfolio-section h2,
     .about-header h2,
     .references-header h2,
-    .main-header h2 {
+    .main-header h2,
+    .thanks-container h1 {
         font-size: 4rem;
     }
 }
