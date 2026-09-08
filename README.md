@@ -48,22 +48,28 @@ Följ dessa steg för att köra projektet på din egen dator:
 Projektet är uppdelat i en modulär struktur för att hålla koden ren och lättunderhållen:
 
 ```text
-├── index.html          # Huvudsida (Portfolio)
-├── thanks.html         # Bekräftelsesida efter skickat formulär
+├── index.html                           # Svensk huvudsida (Portfolio)
+├── index-en.html                        # Engelsk huvudsida (Portfolio)
+├── thanks-sv.html                       # Svensk bekräftelsesida efter skickat formulär
+├── thanks-en.html                       # Engelsk bekräftelsesida efter skickat formulär
 ├── css/
-│   ├── styles.css      # Globala stilar och :root-variabler
-│   ├── navbar.css      # Navigationsmeny
-│   ├── hero.css        # Introduktionssektion
-│   ├── my-skills.css   # Färdigheter (Post-it flip-boxes)
-│   ├── about-me.css    # Om mig (Pusselbits-animationer)
-│   ├── references.css  # Referenskort
-│   ├── contact-me.css  # Kontaktformulär & väderbehållare
-│   └── footer.css      # Sidfot med sociala medier
+│   ├── styles.css                       # Globala stilar och :root-variabler
+│   ├── body.css                         # Grundläggande layout och body-stilar
+│   ├── navbar.css                       # Navigationsmeny & språkväljare
+│   ├── hero.css                         # Introduktionssektion (Hero)
+│   ├── my-skills.css                    # Färdigheter (Post-it flip-boxes)
+│   ├── my-portfolio.css                 # Projektöversikt och kort
+│   ├── about-me.css                     # Om mig (Pusselbits-animationer)
+│   ├── references.css                   # Referenskort
+│   ├── contact-me.css                   # Kontaktformulär & väderbehållare
+│   ├── thanks.css                       # Design för bekräftelsesidorna
+│   └── footer.css                       # Sidfot med sociala medier
 ├── javascript/
-│   └── script.js       # Väder-API & interaktiva händelser
-└── images/             # Bilder, ikoner och bakgrunder
+│   └── script.js                        # Väder-API & interaktiva händelser
+├── images/                              # Bilder, ikoner och bakgrunder (profilbild, etc.)
 └── files/
-    └── CV-2026.pdf     # Nedladdningsbart CV för rekryterare
+    ├── CV-Jennifer-Orrbon.pdf           # Svenskt nedladdningsbart CV
+    └── CV-Jennifer-Orrbon-2026-English.pdf # Engelskt nedladdningsbart CV
 ```
 
 ---
