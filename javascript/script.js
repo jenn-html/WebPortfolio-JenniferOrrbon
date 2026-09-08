@@ -40,9 +40,8 @@ async function fetchWeather() {
 
         weatherInfo.innerHTML = `
             <img src="${iconUrl}" alt="${description}">
-            <span>${temperature}°C in ${location} today</span>
+            <span> ${location} ${temperature}°C </span>
         `;
-
     } catch (error) {
         console.error("Error fetching weather data:", error);
     }
