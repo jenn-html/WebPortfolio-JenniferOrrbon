@@ -1,6 +1,6 @@
 # Jennifer Orrbon - Webportfolio 🚀
 
-Välkommen till min personliga webbportfolio! Den här webbplatsen är byggd för att presentera mig själv som **Systemutvecklare inom .NET**, visa upp mina aktuella projekt och tekniska färdigheter samt ge framtida arbetsgivare och kollegor ett enkelt sätt att kontakta mig eller ladda ner mitt CV.
+Välkommen till min personliga webbportfolio! Den här webbplatsen är byggd som ett skolarbete för att presentera mig själv som **Systemutvecklare inom .NET**, visa upp mina aktuella projekt och tekniska färdigheter samt ge framtida arbetsgivare och kollegor ett enkelt sätt att kontakta mig eller ladda ner mitt CV.
 
 Designen är inspirerad av ett kreativt och personligt skrivbordskontor med interaktiva pusselbitar, post-it-lappar och dolda detaljer (ja, om du älskar TV-serien *Friends* kommer du att hitta en hel del påskägg i koden! ☕️).
 
