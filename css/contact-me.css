@@ -4,8 +4,7 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
+    padding: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -14,11 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 form {
-    background-color: var(--background-color);
-    padding: 20px;
+    padding: 40px;
 }
 
 .form-group,
@@ -35,7 +34,7 @@ form {
     gap: 20px;
     width: 100%;
     align-items: center;
-    padding-right: 20px;
+
 }
 
 .form-group-button button {
@@ -51,15 +50,20 @@ input[type="text"],
 input[type="email"],
 textarea {
     padding: 10px;
-    border: 1px solid rgb(188, 134, 237, 0.5);
+    border: none;
     box-shadow: inset 0 0 5px rgba(248, 208, 248, 0.211);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.3vw;
     background-color: rgba(253, 251, 253, 0.908);
+}
+
+#weatherInfo {
+    font-size: 1.3vw;
 }
 
 label {
     padding-bottom: 10px;
+    font-size: 1.3vw;
 }
 
 input:hover,
@@ -68,30 +72,26 @@ input:focus,
 textarea:focus,
 input:active,
 textarea:active {
-    border-color: var(--primary-color2);
-    background-color: rgba(255, 220, 250, 0.552);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
 }
 
 .form-weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.632);
     align-items: center;
-    gap: 20px;
+
 }
 
-.form-weather div {
-    margin: 10px;
-}
-
-.weather-container,
-.form-container {
+.weather-container {
+    align-items: center;
     justify-content: space-between;
-    margin: 10px;
 }
 
 .form-container {
     background-color: var(--accent-color-light);
-    /* border-radius: 10px; */
+    width: 100%;
 }
 
 .weather-container,
@@ -101,36 +101,44 @@ textarea:active {
     flex-direction: column;
 }
 
-.weather-container {
-    background-color: var(--pink-color-from-post-it);
+.btn-send {
+    width: 100%;
 }
 
-
+input::placeholder,
+textarea::placeholder {
+    color: var(--blue-color-from-post-it);
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 @media (max-width: 800px) {
 
     .contact-section {
         height: auto;
+        width: 100vw;
     }
 
     .form-weather {
         margin-top: 0;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 4.5rem;
+    label {
+        padding-bottom: 10px;
+        font-size: 1.3rem;
     }
 
-    h2 {
-        font-size: 2rem;
-        margin-top: 10px;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.3rem;
     }
 
-    .weather-container,
-    .download-cv-section {
-        margin: 0;
-        padding: 0;
+    #weatherInfo,
+    #weatherMessage,
+    #weatherAlways {
+        font-size: 1.3rem;
     }
 }

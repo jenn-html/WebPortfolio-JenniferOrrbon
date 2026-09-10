@@ -21,8 +21,8 @@
 }
 
 .portfolio-item img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: white;
     object-fit: cover;
     border: 5px solid var(--secondary-color1);
@@ -32,12 +32,12 @@
 }
 
 .portfolio-item img:hover {
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
 }
 
 .portfolio-item {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--blue-color-from-post-it);
     padding: 20px;
     border: 1px dotted rgba(211, 203, 255);
     height: auto;
@@ -52,4 +52,21 @@
     font-size: 1.3rem;
     padding-top: 10px;
     color: var(--secondary-color1);
+}
+
+@media (max-width: 800px) {
+    .portfolio-item img {
+        width: 80vw;
+        height: 80vw;
+
+    }
+
+    .portfolio-container {
+        width: 100vw;
+    }
+
+    .portfolio-item img:hover {
+        width: 85vw;
+        height: 85vw;
+    }
 }

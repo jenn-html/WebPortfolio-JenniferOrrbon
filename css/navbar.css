@@ -28,7 +28,7 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    background-color: var(--blue-color-from-post-it);
+    background-color: color-mix(in srgb, var(--primary-color2) 70%, transparent);
     width: 100%;
 }
 
@@ -46,19 +46,20 @@ ul {
 }
 
 li .btn {
-    background-color: none;
+    background-color: transparent;
 
 }
 
 a {
     text-decoration: none;
     color: var(--text-color-light);
-    font-size: 1rem;
+    font-size: 1.5vw;
+    text-shadow: 0 0 1px;
     transition: color 0.2s ease;
 }
 
 #my-name {
-    font-size: 2.5rem;
+    font-size: 2vw;
     font-weight: bold;
     color: var(--text-color-light);
     font-family: 'Hurricane', cursive;
@@ -101,5 +102,9 @@ a:active {
     nav li {
         padding-left: 5px;
         padding-right: 5px;
+    }
+
+    #my-name {
+        font-size: 2rem;
     }
 }

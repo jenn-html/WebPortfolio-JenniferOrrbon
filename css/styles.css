@@ -1,3 +1,4 @@
+/* "Rules control the fun!" */
 *,
 *::before,
 *::after {
@@ -8,27 +9,21 @@
 
 :root {
     --green-color-from-post-it: rgba(159, 225, 156);
-    --green-color-from-post-it-transparent: rgba(159, 225, 156, 0.526);
+    --green-dark-color: rgb(92, 162, 107);
     --green-darker-color-from-post-it-transparent: rgba(129, 228, 124, 0.526);
-    --orange-color-from-post-it: rgba(255, 218, 171);
-    --yellow-color-from-post-it: rgba(255, 240, 173);
-    --yellow-color-from-post-it-transparent: rgba(255, 240, 173, 0.526);
-    --yellow-darker-color-from-post-it-transparent: rgba(251, 231, 143, 0.526);
-    --purple-color-from-post-it: rgba(211, 203, 255);
+    --orange-dark-color: rgb(232, 156, 56);
+    --purple-dark-color: rgb(129, 103, 161);
     --pink-color-from-post-it: rgba(255, 213, 220);
-    --pink-color-from-post-it-transparent: rgba(255, 213, 220, 0.526);
+    --pink-dark-color: rgb(181, 75, 140);
     --pink-darker-color-from-post-it-transparent: rgba(255, 191, 202, 0.8);
     --blue-color-from-post-it: rgba(174, 215, 236);
-
     --primary-color2: #2d7196;
-    --primary-color1: #ec95e3;
     --secondary-color1: #8351a8;
     --secondary-color2: #1a2c54;
     --accent-color: #eec0ea;
     --accent-color-light: #99dbfe80;
     --text-color-dark: #000;
     --text-color-light: white;
-    --gradient-background: linear-gradient(to bottom, #56b7f334, #ffffff73, #4d7a937d);
 }
 
 .portfolio-section,
@@ -37,15 +32,23 @@
 .contact-section,
 .skills-section,
 .references-section {
-    /* background-color: rgba(255, 255, 255, 0.637); */
-    /* border-radius: 10px; */
     width: 90vw;
     margin-top: 5vh;
     padding-bottom: 5vh;
 }
 
+
+
+/* Could this layout BE any more responsive?! */
+
+
+.background-img {
+    width: 100%;
+    background-repeat: repeat;
+}
+
 p {
-    font-size: 1.3rem;
+    font-size: 1.3vw;
 }
 
 html {
@@ -65,21 +68,19 @@ h3 {
 .portfolio-section h2,
 .about-header h2,
 .references-header h2 {
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .btn {
-    background-color: var(--pink-color-from-post-it);
+    background-color: var(--purple-dark-color);
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.5rem;
+    padding: 15px 20px;
+    font-size: 1.5vw;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 1px 1px 5px #000000;
-    text-shadow: 2px 2px 10px #7a1c71;
+    box-shadow: 0 0 15px #0000006e;
     margin-top: 20px;
-    border: 2px solid var(--pink-darker-color-from-post-it-transparent);
     transition: background-color 0.3s, transform 0.1s;
 }
 
@@ -89,29 +90,36 @@ h3 {
 }
 
 .btn--download:hover {
-    background-color: rgba(74, 193, 72, 0.463);
+    background-color: var(--green-darker-color-from-post-it-transparent);
     color: white;
 }
 
 .btn:active,
 .btn--download:active {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    transform: scale(0.98);
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.541) inset;
 }
 
 .btn--download {
-    background-color: var(--green-darker-color-from-post-it-transparent);
+    background-color: var(--green-dark-color);
     color: var(--text-color-light);
-    padding: 10px 20px;
-    font-size: 1.8rem;
+    padding: 15px 20px;
+    font-size: 1.5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 50px;
     cursor: pointer;
     margin: 30px;
-    box-shadow: 1px 1px 5px #000000;
-    text-shadow: 2px 2px 10px #063810;
-    border: 1px solid var(--green-color-from-post-it-transparent);
+    box-shadow: 0 0 15px #0000006e;
     transition: background-color 0.3s, transform 0.1s;
+}
+
+@media (max-width: 1000px) {
+    .thanks-container {
+        width: 80vw;
+        margin-top: 0;
+        padding-bottom: 0;
+        min-height: 50vh;
+    }
 }
 
 @media (max-width: 800px) {
@@ -121,9 +129,34 @@ h3 {
     .about-section,
     .contact-section,
     .skills-section,
-    .references-section {
+    .references-section,
+    .thanks-container {
         width: 100vw;
         margin-top: 0;
         padding-bottom: 0;
+    }
+
+    .btn,
+    .btn--download {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .skills-header h2,
+    .about-header h2,
+    .contact-section h2,
+    .portfolio-section h2,
+    .about-header h2,
+    .references-header h2,
+    .main-header h2,
+    .thanks-container h1 {
+        font-size: 4rem;
     }
 }
