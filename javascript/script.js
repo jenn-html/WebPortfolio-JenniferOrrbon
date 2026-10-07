@@ -63,4 +63,32 @@ function mouseOver() {
 function mouseOut() {
     profileMessage.style.visibility = "hidden";
 }
+// ---------------------------handwriting effect--------------------------
+const translations = {
+    sv: "Systemutvecklare .NET",
+    en: "System Developer .NET",
+};
 
+// 2. Läs av vilket språk sidan är inställd på (defaultar till 'sv' om det saknas)
+const currentLang = document.documentElement.lang || "sv";
+
+// 3. Hämta rätt text baserat på språket
+const textString = translations[currentLang] || translations["sv"];
+
+let index = 0;
+const targetElement = document.getElementById("handwritten");
+
+function typeHandwriting() {
+    if (index < textString.length) {
+        targetElement.textContent += textString.charAt(index);
+        index++;
+
+        // Slumpmässig hastighet för handskriftskänsla
+        const randomSpeed = Math.floor(Math.random() * (130 - 60 + 1)) + 60;
+
+        setTimeout(typeHandwriting, randomSpeed);
+    }
+}
+
+// Starta när sidan laddats
+window.addEventListener("DOMContentLoaded", typeHandwriting);
